@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>final test modul 1</title>
+</head>
+<body>
+<input type="text" id="a"> nhập a <br>
+<input type="text" id="b"> nhập b <br>
+<i id="in"></i> <br>
+
+<button onclick="ptbn()">giải</button>
+</body>
+</html>
+<script>
+    function ptbn(){
+        let a=parseFloat(document.getElementById('a').value);
+        let b=parseFloat(document.getElementById('b').value);
+        let x=-b/a;
+        if (a!==0){
+            document.getElementById('in').innerHTML='phương trình có nghiệm x='+x
+        }else{
+            document.getElementById('in').innerHTML='phương trình vô nghiệm '
+        }
+
+    }
+
+</script>
